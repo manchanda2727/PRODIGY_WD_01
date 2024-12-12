@@ -1,0 +1,72 @@
+/* General reset */
+body, ul, li, a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Navigation styles */
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, color 0.3s ease;
+  z-index: 1000;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list a {
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-list a:hover {
+  background: #333;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Scrolled state for the navbar */
+.scrolled {
+  background: #333;
+}
+
+.scrolled .nav-list a {
+  color: #fff;
+}
+
+.scrolled .nav-list a:hover {
+  background: #fff;
+  color: #333;
+}
